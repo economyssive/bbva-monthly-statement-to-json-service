@@ -1,0 +1,3 @@
+[submodule "bbva-monthly-statement-pdf-to-csv"]
+	path = bbva-monthly-statement-pdf-to-csv
+	url = git@github.com:Economyssive/bbva-monthly-statement-pdf-to-csv.git
