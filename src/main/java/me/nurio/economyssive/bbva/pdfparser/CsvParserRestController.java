@@ -1,5 +1,6 @@
 package me.nurio.economyssive.bbva.pdfparser;
 
+import me.nurio.economyssive.bbva.pdftocsv.BbvaPdfToCsv;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,7 +11,7 @@ import java.io.InputStream;
 import java.util.List;
 
 @RestController
-public class FileHandlerRestController {
+public class CsvParserRestController {
 
     @PostMapping("/csv")
     public String fileHandler(@RequestParam("file") MultipartFile file) throws IOException {
