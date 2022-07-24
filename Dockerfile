@@ -4,6 +4,7 @@ FROM maven:3.8-openjdk-16 as builder
 
 WORKDIR /build
 COPY src src
+COPY bbva-monthly-statement-pdf-to-csv bbva-monthly-statement-pdf-to-csv
 COPY pom.xml pom.xml
 
 RUN mvn -f pom.xml clean package
